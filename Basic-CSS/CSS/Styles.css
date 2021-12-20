@@ -1,0 +1,104 @@
+/*========================= Google Fonts: 'Merriweather', serif =========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.first-paragraph{
+    font-family: 'Roboto', sans-serif;
+}
+.second-paragraph{
+    font-family: 'Merriweather', serif;
+}
+
+/*========================= Images =========================*/
+
+.img1{
+    width: 50px;
+    border-style: dotted;
+    border-color: red;
+    border-radius: 10px;
+}
+.img2{
+    width: 100px;
+    border-style: groove;
+    border-color: green;
+    border-radius: 20px;
+}
+.img3{
+    width: 150px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 50%;
+}
+
+/*========================= Margin =========================*/
+
+.box{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+}
+
+.green-bgc{
+    background-color: green;
+    height: 300px;
+    width: 300px;
+}
+
+.yellow-bgc{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin-left: 50px; /*Moves the box 50px away from the left*/
+}
+
+.red-bgc{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin-left: 75px;
+    margin-top: 50px; /*Moves the box 50px away from the top*/
+}
+
+/*========================= Attr = Value Selector =========================*/
+
+[type='checkbox']{
+    margin-top: 50px;
+}
+
+/*========================= Inheritance =========================*/
+
+.blue-text{
+    color: #0000ff
+}
+.green-text{
+    color: #0f0;
+}
+#orange-text{
+    color: orange;
+}
+.purple-text{
+    color: rgb(128, 0, 128);
+}
+.red-text{
+    color: red !important;
+}
+/*========================= CSS Variables =========================*/
+
+:root{
+    --f-color: black;
+    --f-size: 30px;
+}
+
+.footer{
+    color: var(--f-color);
+    font-size: var(--f-size);
+    text-align: center;
+}
+
+@media(max-width:500px){
+    :root{
+        --f-color: gray;
+        --f-size: 20px;
+    }
+}

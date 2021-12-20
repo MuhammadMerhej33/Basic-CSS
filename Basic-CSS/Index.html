@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS Revision</title>
+    <!--Master Stylesheet-->
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <!--Google fonts: 'Roboto', sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Google Fonts-->
+    <div style="background-color: navy; color: white; padding: 20px;">
+        <h2>Using Google Fonts:</h2>
+        <p class="first-paragraph">Roboto: This font is used with a Link and has sans-serif as a fallback value.</p>
+        <p class="second-paragraph">Merriweather: This font is used with an Import and has serif as a fallback value.</p>
+        <p>This div container has an inline padding of 20px</p>
+    </div>
+
+    <!--Image Resizing and Borders-->
+    <div>
+        <h2>Images Edited Using CSS Properties:</h2>
+        <img class="img1" src="https://media.istockphoto.com/vectors/goat-vintage-logo-retro-print-poster-for-butchery-vector-id1081081848?k=20&m=1081081848&s=612x612&w=0&h=sL2Q9lTTAXENnyl1OKpxtzESNbESlzSIvJmQwxTDb9s=" alt="goat">
+        <img class="img2" src="https://media.istockphoto.com/vectors/goat-vintage-logo-retro-print-poster-for-butchery-vector-id1081081848?k=20&m=1081081848&s=612x612&w=0&h=sL2Q9lTTAXENnyl1OKpxtzESNbESlzSIvJmQwxTDb9s=" alt="goat">
+        <img class="img3" src="https://media.istockphoto.com/vectors/goat-vintage-logo-retro-print-poster-for-butchery-vector-id1081081848?k=20&m=1081081848&s=612x612&w=0&h=sL2Q9lTTAXENnyl1OKpxtzESNbESlzSIvJmQwxTDb9s=" alt="goat">
+    </div>
+
+    <!--Boxes for Margin-->
+    <div>
+        <h2>Margins:</h2>
+        <div class="box green-bgc">
+            <div class="box yellow-bgc">
+                <h5>Margin: 50px to the right</h5>
+            </div>
+            <div class="box red-bgc">
+                <h5>Margin: 75px to the right and 50px to the bottom</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--Type Selector-->
+    <div>
+        <h2>The [attr=value] selector:</h2>
+        <input type="checkbox">Checkbox Pushed 50px away from the top
+    </div>
+
+    <!--CSS Inheritance-->
+    <div>
+        <h2>Inheritance:</h2>
+        <p class="blue-text">This paragraph is styled using the blue-text class.</p>
+        <p class="blue-text green-text purple-text">Browsers read css from top to bottom.</p>
+        <p class="blue-text green-text purple-text" id="orange-text">ID has a higher precedence than classes.</p>
+        <p style="color:black;" class="blue-text green-text purple-text" id="orange-text">Inline CSS has the highest precedence.</p>
+        <p style="color:black;" class="blue-text green-text purple-text red-text" id="orange-text">The Keyword !important overrides everything.</p>
+    </div>
+
+    <!--Variables and Media Queries-->
+    <footer class="footer">Copyright &copy;. Muhammad Merhej.</footer>
+</body>
+</html>
